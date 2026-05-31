@@ -62,6 +62,9 @@ jobs:
           SIGNING_KEYSTORE_PASSWORD: ${{ secrets.SIGNING_KEYSTORE_PASSWORD }}
           SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          CURRENCY_API_KEY: ${{ secrets.CURRENCY_API_KEY }}
         run: ./gradlew :app:bundleRelease --no-configuration-cache
 
       - name: Locate AAB

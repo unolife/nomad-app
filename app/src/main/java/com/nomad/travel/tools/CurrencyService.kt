@@ -91,7 +91,7 @@ class CurrencyService {
 
     companion object {
         private const val BASE_URL = "https://apisis.dev"
-        private const val API_KEY = "e_C4dA0zNp2mFr42GRGQwsNw_jODLY0w_GVmnSGjt14"
+        private val API_KEY get() = com.nomad.travel.BuildConfig.CURRENCY_API_KEY
 
         // Rough "units of currency per 1 USD" — offline estimates, updated 2026-04.
         private val USD_RATES = mapOf(
