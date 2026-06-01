@@ -133,7 +133,6 @@ dependencies {
     implementation(libs.play.app.update)
     implementation(libs.play.app.update.ktx)
 
-    implementation(libs.android.install.referrer)
     implementation(libs.okhttp)
     implementation(libs.commons.compress)
     implementation(files("libs/sherpa-onnx-1.12.39.aar"))
